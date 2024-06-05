@@ -75,7 +75,7 @@ function setTime(){
 
 function displayTimer(){
   
-  if(time){
+  if(time >= 0){
     
     hoursUnit = Math.floor(time/(60*60));
     minutesUnit = Math.floor((time%(60*60))/60);
