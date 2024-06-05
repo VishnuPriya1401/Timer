@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Timer project</title>
+</head>
+<body>
+  <h2 class="project-title">Timer Project</h2>
+  <div class="set-timer">
+    <p class="set-timer-title">Set Timer</p>
+    <div class="timer-input-area">
+      <div class="timing">
+        <p class="time-unit">hr</p>
+        <input type="number" id="time-hour" name="hour" class="time-input  js-hr" placeholder="00">
+      </div>
+      <div class="timing">
+        <p class="time-unit">min</p>
+        <input type="number" id="time-minute" name="minute" class="time-input  js-min" placeholder="00">
+      </div>
+      <div class="timing">
+        <p class="time-unit">sec</p>
+        <input type="number" id="time-sec" name="seconds" class="time-input  js-sec" placeholder="00">
+      </div>
+    </div>
+    <button class="start-btn js-start-btn">Start</button>    
+  </div>
+  <div class="run-timer">
+    <div class="display-timer">
+    </div>
+    <button class="pause-play-btn btn">&#10073; &#10073;</button>
+    <button class="set-timer-btn btn">Set Timer</button>
+    <button class="reset-btn btn">&#10227;</button>
+  </div>
+  <p class="dummy-test"></p>
+  <script src="script.js"></script>
+</body>
+</html>
