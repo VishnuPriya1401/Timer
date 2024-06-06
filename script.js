@@ -29,6 +29,10 @@ document.querySelector('.set-timer-btn').addEventListener('click',()=>{
   document.querySelector('.set-timer').style.display='block';
   document.querySelector('.run-timer').style.display='none';
   displayTimerSet.innerHTML='';
+
+  isPause = false;
+  document.querySelector('.pause-play-btn').innerHTML = `<img src="Icons/pause.png" class="icon">`;
+  int = setInterval(displayTimer, 1000);
 })
 
 document.querySelector('.pause-play-btn').addEventListener('click',()=>{
