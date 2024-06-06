@@ -35,11 +35,11 @@ document.querySelector('.pause-play-btn').addEventListener('click',()=>{
   if(!isPause){
     isPause = true;
     clearInterval(int);
-    document.querySelector('.pause-play-btn').innerHTML = `<img src="icons/play.png" class="icon">`;
+    document.querySelector('.pause-play-btn').innerHTML = `<img src="Icons/play.png" class="icon">`;
   }
   else{
     isPause = false;
-    document.querySelector('.pause-play-btn').innerHTML = `<img src="icons/pause.png" class="icon">`;
+    document.querySelector('.pause-play-btn').innerHTML = `<img src="Icons/pause.png" class="icon">`;
     int = setInterval(displayTimer, 1000);
   }
 });
@@ -47,7 +47,7 @@ document.querySelector('.pause-play-btn').addEventListener('click',()=>{
 document.querySelector('.reset-btn').addEventListener('click', ()=>{
   isPause = true;
   clearInterval(int);
-  document.querySelector('.pause-play-btn').innerHTML = `<img src="icons/play.png" class="icon">`;
+  document.querySelector('.pause-play-btn').innerHTML = `<img src="Icons/play.png" class="icon">`;
 
   time = (hr*60*60) + (min*60) + sec;
   displayTimer();
